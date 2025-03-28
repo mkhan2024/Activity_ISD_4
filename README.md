@@ -13,4 +13,6 @@ This activity will help to reinforce learning of the Module 4 concepts of:
 
 ## Additional Information
 
-[ Use this space to include additional information that may help in your learning. ]
+- Event Handling with Signals and Slots
+- QTableWidget for Contact Management
+- QMessageBox for User Confirmation
