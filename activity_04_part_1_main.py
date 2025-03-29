@@ -1,10 +1,10 @@
-"""A client program written to verify correctness of the activity 
+"""A client program written to verify correctness of the activity
 classes.
 """
 
 __author__ = "ACE Faculty"
-__version__ = "1.0.0"
-__credits__ = ""
+__version__ = "1.1.0"
+__credits__ = "Md Apurba Khan"
 
 # REQUIREMENT - add import statements
 from contact_list.contact_list import ContactList

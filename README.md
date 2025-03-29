@@ -9,7 +9,7 @@ This activity will help to reinforce learning of the Module 4 concepts of:
 
 ## Author
 
-[Md Apurba Khan]
+Md Apurba Khan
 
 ## Additional Information
 

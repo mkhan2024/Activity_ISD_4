@@ -7,6 +7,7 @@ __credits__ = "Md Apurba Khan"
 from PySide6.QtWidgets import QMainWindow, QLineEdit, QPushButton, QTableWidget, QLabel, QVBoxLayout, QWidget, QTableWidgetItem, QMessageBox
 from PySide6.QtCore import Slot
 
+
 class ContactList(QMainWindow):
     """Represents a window that provides the UI to manage contacts.
 
@@ -24,12 +25,13 @@ class ContactList(QMainWindow):
         self.__initialize_widgets()
         # Connect the add_button clicked signal to the on_add_contact slot
         self.add_button.clicked.connect(self.__on_add_contact)
-        # Connect the remove_button clicked signal to the on_remove_contact slot
+        # Connect the remove_button clicked signal to the on_remove_contact
+        # slot
         self.remove_button.clicked.connect(self.__on_remove_contact)
 
     def __initialize_widgets(self):
         """Initializes the widgets on this Window.
-        
+
         DO NOT EDIT.
         """
         self.setWindowTitle("Contact List")
@@ -42,7 +44,7 @@ class ContactList(QMainWindow):
 
         self.add_button = QPushButton("Add Contact", self)
         self.remove_button = QPushButton("Remove Contact", self)
-        
+
         self.contact_table = QTableWidget(self)
         self.contact_table.setColumnCount(2)
         self.contact_table.setHorizontalHeaderLabels(["Name", "Phone"])
@@ -89,7 +91,8 @@ class ContactList(QMainWindow):
             self.status_label.setText(f"Added contact: {name}")
         else:
             # Update status label with error message
-            self.status_label.setText("Please enter a contact name and phone number.")
+            self.status_label.setText(
+                "Please enter a contact name and phone number.")
 
     @Slot()
     def __on_remove_contact(self):
